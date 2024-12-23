@@ -1,6 +1,6 @@
 import React from "react"
-import Navigation from "./Navigation"
-import GetInTouch from "./GetInTouch"
+import Navigation from "../other/Navigation"
+import GetInTouch from "../other/GetInTouch"
 import MainPic from "../../assets/photos/services-main.png"
 
 function ServicesHeader() {

@@ -1,5 +1,5 @@
 import Footer from "../components/Footer/Footer"
-import ServicesHeader from "../components/other/ServicesHeader"
+import ServicesHeader from "../components/Services/ServicesHeader"
 import ServicesSection from "../components/Services/ServicesSection"
 
 function Services() {
