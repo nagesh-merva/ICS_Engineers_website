@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      transitionProperty: {
+        height: 'height',
+      },
+    },
     fontFamily: {
       lato: ['Lato'],
       raleway: ['Raleway', 'sans-serif'],
