@@ -1,18 +1,13 @@
 import React from "react"
 import { useState } from "react"
 import { FaBars, FaTimes } from "react-icons/fa"
+import { useMainContext } from "../../context/MainContext"
 import NavigationItem from "./NavigationItem"
 
 function Navigation() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const { navigationItems } = useMainContext()
 
-    const navigationItems = [
-        { label: 'Home', path: '/', isActive: false },
-        { label: 'About', path: '/aboutus', isActive: false },
-        { label: 'Services', path: '/services', isActive: true },
-        { label: 'Projects', path: '/projects', isActive: false },
-        { label: 'Contact', path: '/contact', isActive: false }
-    ]
 
     const toggleMenu = () => {
         setIsMenuOpen((prev) => !prev)
@@ -38,7 +33,7 @@ function Navigation() {
                 className={`absolute z-50 top-full left-0 w-full bg-blue-900 transition-all duration-300 md:hidden ${isMenuOpen ? "max-h-screen" : "max-h-0 overflow-hidden"
                     }`}
             >
-                <div className="flex flex-col items-center gap-4 py-4 font-raleway font-semibold" >
+                <div className="flex flex-col items-center gap-4 py-4 font-semibold" >
                     {navigationItems.map((item, index) => (
                         <NavigationItem key={index} page={item} />
                     ))}

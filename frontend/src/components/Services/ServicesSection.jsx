@@ -59,7 +59,7 @@ const servicesData = [
 ]
 function ServicesSection() {
     return (
-        <div className="flex z-10 flex-col self-center pt-14 pb-24 mt-[-100px] w-full bg-white sm:max-w-[600px] md:max-w-[800px] lg:max-w-[1233px] max-md:max-w-full">
+        <div className="flex z-10 mx-3 flex-col self-center pt-14 pb-24 mt-[-100px] w-full bg-white sm:max-w-[600px] md:max-w-[800px] lg:max-w-[1233px] max-md:max-w-full">
             <div className="flex flex-col px-11 w-full max-md:px-5 max-md:max-w-full">
                 <div className="flex items-center self-center md:self-start md:ml-6 px-2 py-1 rounded-full shadow-[0px_4px_20px_rgba(0,0,0,0.25)] text-base font-raleway font-bold text-neutral-500">
                     <FaCircle size={10} className="text-orange-500 mx-2 " />OUR SERVICES<FaCircle size={10} className="text-orange-500 mx-2" />

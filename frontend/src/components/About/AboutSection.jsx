@@ -29,7 +29,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12">
+    <div className="flex z-10 mx-3 flex-col self-center pt-14 pb-24 mt-[-100px] w-full bg-white sm:max-w-[600px] md:max-w-[800px] lg:max-w-[1233px] max-md:max-w-ful">
       <div className="flex items-center justify-center md:justify-start mx-auto md:ml-6 px-2 py-1 rounded-full shadow-md text-base font-raleway font-bold text-neutral-500 max-w-fit">
         <FaCircle size={10} className="text-orange-500 mx-2" />
         <div className="text-center">About us</div>
